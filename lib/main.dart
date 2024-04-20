@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sample_ui_app/widgets/dropdownbutton_widget.dart';
 import 'package:sample_ui_app/widgets/elevatedbutton_widget.dart';
 import 'package:sample_ui_app/widgets/filledbutton_widget.dart';
+import 'package:sample_ui_app/widgets/floatingactionbutton_widget.dart';
 
 import 'widgets/drawerbutton_widget.dart';
 
@@ -56,6 +57,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButtonWidget(),
             Divider(),
             FilledButtonWidget(),
+            Divider(),
+            FloatingActionButtonWidget(),
             Divider(),
           ],
         ),
