@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/drawerbutton_widget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -35,7 +37,20 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('UI確認アプリ'),
       ),
-      body: const Placeholder(),
+      drawer: const Drawer(
+        child: Center(
+          child: Text('Drawer'),
+        ),
+      ),
+      body: const SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            DrawerButtonWidget(),
+            Divider(),
+          ],
+        ),
+      ),
     );
   }
 }
