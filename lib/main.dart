@@ -4,6 +4,7 @@ import 'package:sample_ui_app/widgets/elevatedbutton_widget.dart';
 import 'package:sample_ui_app/widgets/filledbutton_widget.dart';
 import 'package:sample_ui_app/widgets/floatingactionbutton_widget.dart';
 import 'package:sample_ui_app/widgets/iconbutton_widget.dart';
+import 'package:sample_ui_app/widgets/menuitembutton_widget.dart';
 
 import 'widgets/drawerbutton_widget.dart';
 
@@ -47,23 +48,27 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Text('Drawer'),
         ),
       ),
-      body: const SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            DrawerButtonWidget(),
-            Divider(),
-            DropdownButtonWidget(),
-            Divider(),
-            ElevatedButtonWidget(),
-            Divider(),
-            FilledButtonWidget(),
-            Divider(),
-            FloatingActionButtonWidget(),
-            Divider(),
-            IconButtonWidget(),
-            Divider(),
-          ],
+      body: const SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              DrawerButtonWidget(),
+              Divider(),
+              DropdownButtonWidget(),
+              Divider(),
+              ElevatedButtonWidget(),
+              Divider(),
+              FilledButtonWidget(),
+              Divider(),
+              FloatingActionButtonWidget(),
+              Divider(),
+              IconButtonWidget(),
+              Divider(),
+              MenuItemButtonWidget(),
+              Divider(),
+            ],
+          ),
         ),
       ),
     );
