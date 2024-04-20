@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_ui_app/widgets/dropdownbutton_widget.dart';
 
 import 'widgets/drawerbutton_widget.dart';
 
@@ -47,6 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             DrawerButtonWidget(),
+            Divider(),
+            DropdownButtonWidget(),
             Divider(),
           ],
         ),
