@@ -7,6 +7,7 @@ import 'package:sample_ui_app/widgets/floatingactionbutton_widget.dart';
 import 'package:sample_ui_app/widgets/iconbutton_widget.dart';
 import 'package:sample_ui_app/widgets/menuitembutton_widget.dart';
 import 'package:sample_ui_app/widgets/outlinedbutton_widget.dart';
+import 'package:sample_ui_app/widgets/popupmenubutton_widget.dart';
 
 
 void main() {
@@ -69,6 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
               MenuItemButtonWidget(),
               Divider(),
               OutlinedButtonWidget(),
+              Divider(),
+              PopupMenuButtonWidget(),
               Divider(),
             ],
           ),
