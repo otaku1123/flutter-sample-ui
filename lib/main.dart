@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:sample_ui_app/widgets/drawerbutton_widget.dart';
 import 'package:sample_ui_app/widgets/dropdownbutton_widget.dart';
 import 'package:sample_ui_app/widgets/elevatedbutton_widget.dart';
 import 'package:sample_ui_app/widgets/filledbutton_widget.dart';
 import 'package:sample_ui_app/widgets/floatingactionbutton_widget.dart';
 import 'package:sample_ui_app/widgets/iconbutton_widget.dart';
 import 'package:sample_ui_app/widgets/menuitembutton_widget.dart';
+import 'package:sample_ui_app/widgets/outlinedbutton_widget.dart';
 
-import 'widgets/drawerbutton_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -66,6 +67,8 @@ class _MyHomePageState extends State<MyHomePage> {
               IconButtonWidget(),
               Divider(),
               MenuItemButtonWidget(),
+              Divider(),
+              OutlinedButtonWidget(),
               Divider(),
             ],
           ),
