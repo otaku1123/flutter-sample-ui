@@ -11,6 +11,7 @@ import 'package:sample_ui_app/widgets/popupmenubutton_widget.dart';
 import 'package:sample_ui_app/widgets/radiomenubutton_widget.dart';
 import 'package:sample_ui_app/widgets/segmentedbutton_widget.dart';
 import 'package:sample_ui_app/widgets/textbutton_widget.dart';
+import 'package:sample_ui_app/widgets/togglebuttons_widget.dart';
 
 
 void main() {
@@ -81,6 +82,8 @@ class _MyHomePageState extends State<MyHomePage> {
               SegmentedButtonWidget(),
               Divider(),
               TextButtonWidget(),
+              Divider(),
+              ToggleButtonsWidget(),
               Divider(),
             ],
           ),
